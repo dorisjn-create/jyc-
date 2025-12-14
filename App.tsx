@@ -33,13 +33,7 @@ const App: React.FC = () => {
         {/* Logic Controller */}
         <VisionController />
 
-        {!apiKey && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black z-50">
-                <div className="text-red-500 font-mono p-4 border border-red-500">
-                    ERROR: API_KEY is missing from environment.
-                </div>
-            </div>
-        )}
+        
       </div>
     </AppContext.Provider>
   );
